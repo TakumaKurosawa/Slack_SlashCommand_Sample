@@ -3,8 +3,8 @@ package main
 import (
 	"log"
 	"net/http"
-	"slackSlashCommandApp/handler"
 
+	"github.com/Takumaron/Slack_SlashCommand_Sample/handler"
 	"github.com/gorilla/mux"
 )
 
