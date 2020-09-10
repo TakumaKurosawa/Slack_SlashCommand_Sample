@@ -1,11 +1,11 @@
 package main
 
 import (
+	"Slack_SlashCommand_Sample/handler"
 	"log"
 	"net/http"
 	"os"
 
-	"github.com/Takumaron/Slack_SlashCommand_Sample/handler"
 	"github.com/gorilla/mux"
 )
 

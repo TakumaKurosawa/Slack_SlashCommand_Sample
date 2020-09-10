@@ -1,4 +1,4 @@
-module github.com/Takumaron/Slack_SlashCommand_Sample
+module Slack_SlashCommand_Sample
 
 go 1.14
 
