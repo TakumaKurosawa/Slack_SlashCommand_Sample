@@ -13,7 +13,7 @@ func main() {
 	r := mux.NewRouter()
 
 	// connection testAPI
-	r.HandleFunc("/ping", handler.Hello).Methods("GET")
+	r.HandleFunc("/ping", handler.Hello)
 
 	port := os.Getenv("PORT")
 	if port == "" {
