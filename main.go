@@ -23,7 +23,7 @@ func main() {
 		Addr:    port,
 		Handler: r,
 	}
-	log.Println("server start!")
+	log.Printf("server start!: %s", port)
 	log.Fatal(srv.ListenAndServe())
 
 }
