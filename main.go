@@ -20,7 +20,7 @@ func main() {
 		port = "8080"
 	}
 	srv := &http.Server{
-		Addr:    port,
+		Addr:    ":" + port,
 		Handler: r,
 	}
 	log.Printf("server start!: %s", port)
