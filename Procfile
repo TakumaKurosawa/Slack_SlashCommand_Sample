@@ -1,1 +1,1 @@
-web: bin/Slack_SlashCommand_Sample
+web: Slack_SlashCommand_Sample
