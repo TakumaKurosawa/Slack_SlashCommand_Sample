@@ -1,1 +1,1 @@
-web: Slack_SlashCommand_Sample
+web: slackSlashCommandApp
