@@ -19,6 +19,7 @@ func Hello(w http.ResponseWriter, r *http.Request) {
 					Type: "mrkdwn",
 					Text: fmt.Sprintf("*%s*", values.Get("text")),
 				},
+				Accessory: nil,
 			},
 			{
 				Type: "section",
@@ -29,7 +30,7 @@ func Hello(w http.ResponseWriter, r *http.Request) {
 				Accessory: response.SlackAccessory{
 					Type:     "image",
 					ImageURL: "https://techbowl-production.s3.ap-northeast-1.amazonaws.com/mentor-profile-image/27b892da10905f353cf1a6835440a089.jpg",
-					AltText:  "",
+					AltText:  "hoge",
 				},
 			},
 		},
