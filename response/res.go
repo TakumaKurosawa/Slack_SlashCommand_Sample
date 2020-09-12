@@ -5,9 +5,9 @@ type SlackMessage struct {
 }
 
 type SlackBlock struct {
-	Type      string         `json:"type"`
-	Text      SlackText      `json:"text"`
-	Accessory SlackAccessory `json:"accessory"`
+	Type      string          `json:"type"`
+	Text      SlackText       `json:"text"`
+	Accessory *SlackAccessory `json:"accessory"`
 }
 
 type SlackText struct {
