@@ -3,6 +3,7 @@ package handler
 import (
 	"Slack_SlashCommand_Sample/response"
 	"encoding/json"
+	"fmt"
 	"log"
 	"net/http"
 )
@@ -16,7 +17,7 @@ func Hello(w http.ResponseWriter, r *http.Request) {
 				Type: "section",
 				Text: response.SlackText{
 					Type: "mrkdwn",
-					Text: values.Get("text"),
+					Text: fmt.Sprintf("**%s**", values.Get("text")),
 				},
 			},
 		},
