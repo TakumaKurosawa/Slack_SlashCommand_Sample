@@ -10,7 +10,13 @@ type SlackBlock struct {
 }
 
 type SlackText struct {
-	Type        string `json:"type"`
-	Text        string `json:"text"`
-	UnfurlLinks bool   `json:"unfurl_links"`
+	Type      string         `json:"type"`
+	Text      string         `json:"text"`
+	Accessory SlackAccessory `json:"accessory"`
+}
+
+type SlackAccessory struct {
+	Type     string `json:"type"`
+	ImageURL string `json:"image_url"`
+	AltText  string `json:"alt_text"`
 }

@@ -23,9 +23,13 @@ func Hello(w http.ResponseWriter, r *http.Request) {
 			{
 				Type: "section",
 				Text: response.SlackText{
-					Type:        "mrkdwn",
-					Text:        "https://techbowl.co.jp/techtrain/mentors/78",
-					UnfurlLinks: true,
+					Type: "mrkdwn",
+					Text: "https://techbowl.co.jp/techtrain/mentors/78",
+					Accessory: response.SlackAccessory{
+						Type:     "image",
+						ImageURL: "https://techbowl-production.s3.ap-northeast-1.amazonaws.com/mentor-profile-image/27b892da10905f353cf1a6835440a089.jpg",
+						AltText:  "",
+					},
 				},
 			},
 		},
