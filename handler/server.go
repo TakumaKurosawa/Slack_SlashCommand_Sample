@@ -23,8 +23,9 @@ func Hello(w http.ResponseWriter, r *http.Request) {
 			{
 				Type: "section",
 				Text: response.SlackText{
-					Type: "mrkdwn",
-					Text: "https://techbowl.co.jp/techtrain/mentors/78",
+					Type:        "mrkdwn",
+					Text:        "https://techbowl.co.jp/techtrain/mentors/78",
+					UnfurlLinks: true,
 				},
 			},
 		},
