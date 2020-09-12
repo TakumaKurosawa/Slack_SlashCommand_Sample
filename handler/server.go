@@ -10,7 +10,17 @@ import (
 func Hello(w http.ResponseWriter, r *http.Request) {
 	values := r.URL.Query()
 
-	res := response.Hello{Message: values.Get("text")}
+	res := response.SlackMessage{
+		Blocks: []response.SlackBlock{
+			{
+				Type: "section",
+				Text: response.SlackText{
+					Type: "mrkdwn",
+					Text: values.Get("text"),
+				},
+			},
+		},
+	}
 	data, err := json.Marshal(res)
 	if err != nil {
 		log.Println(err)
