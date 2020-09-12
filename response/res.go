@@ -7,7 +7,7 @@ type SlackMessage struct {
 type SlackBlock struct {
 	Type      string          `json:"type"`
 	Text      SlackText       `json:"text"`
-	Accessory *SlackAccessory `json:"accessory"`
+	Accessory *SlackAccessory `json:"accessory, omitempty"`
 }
 
 type SlackText struct {

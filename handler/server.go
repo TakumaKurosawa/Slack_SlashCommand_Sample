@@ -19,7 +19,6 @@ func Hello(w http.ResponseWriter, r *http.Request) {
 					Type: "mrkdwn",
 					Text: fmt.Sprintf("*%s*", values.Get("text")),
 				},
-				Accessory: nil,
 			},
 			{
 				Type: "section",
