@@ -17,7 +17,7 @@ func Hello(w http.ResponseWriter, r *http.Request) {
 				Type: "section",
 				Text: response.SlackText{
 					Type: "mrkdwn",
-					Text: fmt.Sprintf("**%s**", values.Get("text")),
+					Text: fmt.Sprintf("*%s*", values.Get("text")),
 				},
 			},
 		},
