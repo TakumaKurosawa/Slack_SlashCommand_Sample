@@ -20,6 +20,13 @@ func Hello(w http.ResponseWriter, r *http.Request) {
 					Text: fmt.Sprintf("*%s*", values.Get("text")),
 				},
 			},
+			{
+				Type: "section",
+				Text: response.SlackText{
+					Type: "mrkdwn",
+					Text: "https://techbowl.co.jp/techtrain/mentors/78",
+				},
+			},
 		},
 	}
 	data, err := json.Marshal(res)
