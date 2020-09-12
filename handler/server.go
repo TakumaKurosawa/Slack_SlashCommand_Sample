@@ -34,7 +34,7 @@ func Hello(w http.ResponseWriter, r *http.Request) {
 			},
 		},
 	}
-	data, err := json.Marshal(res)
+	data, err := json.Marshal(&res)
 	if err != nil {
 		log.Println(err)
 	}
